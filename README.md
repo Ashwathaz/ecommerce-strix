@@ -1,6 +1,12 @@
-# 🛍️ Simple E-Commerce Website
+# 🛍️ Strix Gaming - E-Commerce Website
 
-This is a fully functional **e-commerce frontend** built using **HTML, CSS, and JavaScript**. It simulates a modern online shopping experience with features like product listings, a shopping cart, and dynamic UI updates — all without using any backend or framework.
+This is a premium **e-commerce platform for high-end gaming accessories**, built using **HTML, CSS, and JavaScript**. It provides a sleek, modern shopping experience with features like dynamic product listings, a persistent shopping cart, and professional glassmorphism design.
+
+---
+
+## 👨‍💻 Created By
+- **Ashwath**
+- **Anand**
 
 ---
 
@@ -20,26 +26,3 @@ This is a fully functional **e-commerce frontend** built using **HTML, CSS, and 
 - **CSS3** – Styling and layout
 - **JavaScript (ES6+)** – Interactivity and logic
 
----
-
-## 🖥️ Live Preview
-
-https://anand0047.github.io/e-commerce-project/
-
----
-
-## 🚀 Getting Started
-
-To run this project locally:
-
-1. Clone the repo:
-git clone https://github.com/Anand0047/ecommerce-site.git
-
-🧠 Project Purpose
-This project was created to:
-
-Practice DOM manipulation
-
-Build a realistic e-commerce frontend without a framework
-
-Understand shopping cart logic with vanilla JavaScript
