@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+catalyst-debug.log
+.git
+.vscode
+Dockerfile
+.dockerignore

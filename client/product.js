@@ -161,23 +161,4 @@ currentProductSizes.forEach((size, index) => {
 
 
 
-function addToCart(event) {
-  const productInfo = {
-      name: event.target.closest('.product').querySelector('.product-name').innerText.trim(),
-      price: event.target.closest('.product').querySelector('.product-price:last-of-type').innerText.trim(),
-
-  };
-
-  let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
-
-  cart.push(productInfo);
-
-  sessionStorage.setItem('cart', JSON.stringify(cart));
-
-  swal("Good job!", "Product added to cart 😍", "success");
-}
-
-const addToCartButtons = document.querySelectorAll('.btn-cart');
-addToCartButtons.forEach(button => {
-  button.addEventListener('click', addToCart);
-});
+// addToCart is handled by inline script in index.html for specific product data

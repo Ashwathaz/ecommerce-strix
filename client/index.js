@@ -16,24 +16,24 @@ document.addEventListener('DOMContentLoaded', function() {
         const userDataContainer = document.getElementById('userDataContainer');
         userDataContainer.innerHTML = `<p style="text-decoration: none;" ><a href="./login/login.html">Please Sign-up !!!</a></p>`;
     }
-    document.addEventListener('DOMContentLoaded', function() {
-        // Get the sign-in form
-        const signInForm = document.querySelector('.sign-in-container form');
-    
+    // Get the sign-in form
+    const signInForm = document.querySelector('.sign-in-container form');
+
+    if (signInForm) {
         // Function to handle login
         function handleSignIn(event) {
             event.preventDefault(); // Prevent form submission
-    
+
             // Get input values
             const email = signInForm.querySelector('input[name="email"]').value;
             const password = signInForm.querySelector('input[name="password"]').value;
-    
+
             // Retrieve user data from local storage
             const userDataString = localStorage.getItem('userData');
-    
+
             if (userDataString) {
                 const userData = JSON.parse(userDataString);
-    
+
                 // Check if email and password match
                 if (email === userData.email && password === userData.password) {
                     // Redirect to index.html
@@ -47,9 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('No user data found!');
             }
         }
-    
+
         // Add event listener to the form for login submission
         signInForm.addEventListener('submit', handleSignIn);
-    });
-    
+    }
 });

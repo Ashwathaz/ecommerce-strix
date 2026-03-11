@@ -1,0 +1,15 @@
+{
+  "name": "e-commerce-project",
+  "version": "1.0.0",
+  "description": "E-commerce project for gaming accessories",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

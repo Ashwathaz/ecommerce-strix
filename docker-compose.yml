@@ -1,0 +1,13 @@
+services:
+  ecommerce-web:
+    build: .
+    container_name: ecommerce-app
+    ports:
+      - "4452:4452"
+    restart: unless-stopped
+    networks:
+      - ecommerce-network
+
+networks:
+  ecommerce-network:
+    driver: bridge
